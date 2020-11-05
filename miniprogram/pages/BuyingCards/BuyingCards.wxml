@@ -1,0 +1,11 @@
+ 
+
+<view class="myView">
+<view class="myCard">
+ <view wx:for="{{card}}" bindtap="orderUrl" wx:key="*this" data-id="{{item.id}}">
+  <view class="myPic">
+  <image class="myImg"  src="{{item.src}}"></image>
+   </view> 
+ </view> 
+  </view>
+</view>

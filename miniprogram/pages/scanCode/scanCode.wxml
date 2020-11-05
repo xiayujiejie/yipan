@@ -1,0 +1,60 @@
+<!-- 下拉框组件页面展示 -->
+
+<!--引入UI-->
+<view class="cu-form-group margin-top">
+  <view class="title">场馆选择:</view>
+  <picker bindchange="PickerChange1" value="{{selectIndex}}" range="{{selectArray}}" range-key="text">
+    <view class="picker">
+      {{selectIndex?selectArray[selectIndex].text:'请选择...'}}
+    </view>
+  </picker>
+</view>
+
+<view class="cu-form-group margin-top">
+  <view class="title">卡片选择:</view>
+  <picker bindchange="PickerChange2" value="{{cardHolderIndex}}" range="{{cardHolder}}" range-key="name">
+    <view class="picker">
+      {{cardHolder[cardHolderIndex].name?cardHolder[cardHolderIndex].name:'请选择...'}}
+    </view>
+  </picker>
+</view>
+<view class="padding text-center" wx:if="{{priceShow}}">
+  <view class="padding-xl radius shadow bg-white">
+    <view class="cu-list menu">
+      <view class="cu-item">
+          <text class="text-grey">单次价格：</text>
+        <view class="action">
+          <text class="text-lg">{{unitPrice}}</text>
+        </view>
+      </view>
+      <view class="cu-item">
+        <text class="text-grey">应扣次数：</text>
+        <view class="action">
+          <text class="text-lg">
+          {{deduction}}
+          </text>
+        </view>
+      </view>
+      <view class="cu-item">
+        <text class="text-grey">易豆：</text>
+        <view class="action">
+          <text class="text-lg">{{beans}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--引入UI结束-->
+
+
+<!-- 
+<view class="mySelect">
+<Select prop-array='{{selectArray}}' defalut-select='{{sortType}}' bind:selected='selectEvent1'></Select>
+</view> 
+
+ <view class="mySelect">
+  <Select prop-array='{{cardHolder}}' defalut-select='{{sortType}}' bind:selected='selectEvent2'></Select>
+</view> -->
+
+
+<button class="cu-btn block bg-cyan margin-tb-sm lg text-black" type="defult" style="color:white" bindtap="wxSign">确认签到</button>

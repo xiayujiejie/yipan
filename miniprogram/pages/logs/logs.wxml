@@ -1,0 +1,23 @@
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">签到记录</view>
+  </view>
+</view>
+
+
+
+<view class="cu-timeline">
+  <!-- <view class="cu-time">昨天</view> -->
+
+    <block wx:for="{{listData}}" wx:key="key" wx:for-item="item">
+      <view class="cu-item text-blue">
+    <view class="bg-cyan content">
+    <view wx:if="{{index % 1 == 0}}">
+      <view class="">签到时间：{{item.signInTime}}</view>
+      <view class="">签到卡号：{{item.cardNo}}</view>
+      <view class="">签到场馆：{{item.rockName}}</view>
+    </view>
+  </view>
+  </view>
+  </block>
+</view>

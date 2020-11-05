@@ -1,0 +1,184 @@
+
+<view class="cu-card article {{isCard?'no-card':''}}">
+
+
+<view class="cu-item shadow">
+  <navigator hover-class="none">
+    <view class="title">
+      <view class="text-cut">首钢攀岩</view>
+    </view>
+    <view class="content">
+      <image src="../../static/images/shougang.png" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content">北京最大的户外极限运动场地——首钢极限公园将于9月19日（本周六）迎来试营业，并计划于10月1日起正式营业，届时将举办为期8天的“首钢极限公园-街SHOW嘉年华”活动。</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">综合</view>
+          <view class="cu-tag bg-pink light sm round">豪华</view>
+        </view>
+      </view>
+    </view>
+    </navigator>
+  </view> 
+
+
+ <view class="cu-item shadow" bindtap="AYclub">
+  <navigator url="/pages/web/web?linkWeb=1" hover-class="none">
+    <view class="title">
+      <view class="text-cut">香蕉攀岩768店</view>
+    </view>
+    <view class="content">
+      <image src="https://mmbiz.qpic.cn/mmbiz_png/WvmgG8zhIKhfPjLib03KwEqrjR5b0ic5MmX8zOYpcolQ3c9vEYcGhAuVkhcVSW3hgOaFSFZk8H9wA0YHgMqUH4OA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content"> 香蕉攀岩768店（原凹印运动空间）成立于2015年12月，位于学清路768创意园内，是全北京最具气氛的攀岩馆，全国青少年攀岩推广基地。交通便利，距15号线六道口地铁站步行仅需10分钟；或乘坐355路;392路;398路;490路;693路石板房站下车，步行5分钟即可到达。园区内停车位充足，环境宜人，周边就餐选择丰富。</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">抱石</view>
+          <view class="cu-tag bg-green light sm round">公开课</view>
+          <view class="cu-tag bg-yellow light sm round">氛围佳</view>
+        </view>
+      </view>
+    </view>
+    </navigator>
+  </view>
+
+
+  <view class="cu-item shadow">
+    <navigator url="/pages/web/web?linkWeb=2" hover-class="none">
+    <view class="title">
+      <view class="text-cut">浩石运动攀岩空间</view>
+    </view>
+    <view class="content">
+      <image src="../../static/images/haoshi.jpg" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content"> 场地占地400平方米，岩壁造型丰富、角度多变，抱石攀爬面积达300平方米,岩馆内部配备中央空调与新风系统，即使外面严寒酷暑岩馆内的中央空调也能保证你舒适的攀爬，新风系统让我们和PM2.5说再见  </view>
+        <view>
+          <view class="cu-tag bg-red light sm round">抱石</view>
+          <view class="cu-tag bg-green light sm round">月赛</view>
+          <view class="cu-tag bg-yellow light sm round">自动录像</view>
+        </view>
+      </view>
+    </view>
+      </navigator>
+  </view>
+<!-- 
+  <view class="cu-item shadow">
+    <navigator url="/pages/web/web?linkWeb=3" hover-class="none">
+    <view class="title">
+      <view class="text-cut">岩时攀岩馆</view>
+    </view>
+    <view class="content">
+      <image src="../../static/images/yanshi.jpg" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content"> 岩时攀岩馆，一家集抱石、难度、速度于一体的综合性攀岩馆</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">综合</view>
+          <view class="cu-tag bg-green light sm round">线路丰富</view>
+          <view class="cu-tag bg-yellow light sm round">团建</view>
+        </view>
+      </view>
+    </view>
+     </navigator>
+  </view> -->
+
+
+  <view class="cu-item shadow">
+  <navigator url="/pages/web/web?linkWeb=5" hover-class="none">
+    <view class="title">
+      <view class="text-cut">人人攀岩</view>
+    </view>
+    <view class="content">
+      <image src="../../static/images/renren.jpg" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content"> 人人攀岩（北京）体育文化有限公司旗下的人人攀岩品牌由攀岩爱好者创立，专注于攀岩运动的推广，目前在北京拥有三家大型综合型攀岩馆，</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">综合</view>
+          <view class="cu-tag bg-green light sm round">速度赛道</view>
+          <!-- <view class="cu-tag bg-yellow light sm round">赛道</view> -->
+        </view>
+      </view>
+    </view>
+    </navigator>
+   </view>
+
+
+  <view class="cu-item shadow">
+   <navigator url="/pages/web/web?linkWeb=4" hover-class="none">
+    <view class="title">
+      <view class="text-cut">攀岩最爱&Solo咖啡馆</view>
+    </view>
+    <view class="content">
+      <image src="../../static/images/640.jpg" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content"> 攀岩最爱&Solo咖啡馆试运营不到两个月，接待团队活动7场，包括公司团建+攀岩、桌游+攀岩、青少科普课+攀岩、亲子+攀岩、家庭生日会+攀岩、咖啡品鉴+攀岩、相亲交友+攀岩。攀岩+X的理念，让每个周末来岩馆的人都能感受到不一样的新鲜元素。 </view>
+        <view>
+          <view class="cu-tag bg-red light sm round">综合</view>
+          <view class="cu-tag bg-brown light sm round">咖啡</view>
+          <view class="cu-tag bg-pink light sm round">交友</view>
+        </view>
+      </view>
+    </view>
+     </navigator>
+  </view>
+
+
+
+  <view class="cu-item shadow">
+  <navigator url="/pages/web/web?linkWeb=6" hover-class="none">
+    <view class="title">
+      <view class="text-cut">奥攀攀岩（玉泉营店）</view>
+    </view>
+    <view class="content">
+      <image src="../../static/images/aopan.jpg" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content">本店占地面积近1000㎡，攀爬面积1200㎡，设有15m大角度先锋区、15m国标速度区、12米青少年标准速度区、顶绳自由攀爬区、体验区、攀石区、可调角度区、体能教学区；</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">综合</view>
+          <view class="cu-tag bg-yellow light sm round">青少年</view>
+        </view>
+      </view>
+    </view>
+    </navigator>
+  </view>  
+
+
+  <view class="cu-item shadow">
+  <navigator url="/pages/web/web?linkWeb=7" hover-class="none">
+    <view class="title">
+      <view class="text-cut">趣野攀岩—燕郊馆&回龙观馆</view>
+    </view>
+    <view class="content">
+      <image src="../../static/images/quye.png" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content">场馆位于北京京东（燕郊）核心区，与城市副中心仅一河之隔，总占地20000平米。全室内场馆，新风空调系统，餐厅供应，免费停车。现已开放蹦床公园、卡丁车、攀岩、篮球、羽毛球、游泳馆等，是京东（燕郊）地区集运动、休闲、娱乐为一体的综合性体育场馆。</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">综合</view>
+          <view class="cu-tag bg-pink light sm round">先锋</view>
+          <view class="cu-tag bg-green light sm round">速度道</view>
+          <view class="cu-tag bg-brown light sm round">蹦极</view>   
+        </view>
+      </view>
+    </view>
+    </navigator>
+  </view> 
+
+
+   <view class="cu-item shadow">
+  <navigator url="/pages/web/web?linkWeb=8" hover-class="none">
+    <view class="title">
+      <view class="text-cut">E.T. 攀岩中攀新奥店</view>
+    </view>
+    <view class="content">
+      <image src="../../static/images/ET.png" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content">出地铁就攀岩，方便没道理！！地点：地图导航“et中攀”即是。</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">综合</view>
+          <view class="cu-tag bg-pink light sm round">位置佳</view>
+          <view class="cu-tag bg-green light sm round">黑练</view>
+        </view>
+      </view>
+    </view>
+    </navigator>
+  </view> 
+
+
+</view>

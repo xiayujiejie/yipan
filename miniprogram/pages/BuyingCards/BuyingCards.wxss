@@ -1,0 +1,35 @@
+/* pages/BuyingCards/BuyingCards.wxss */
+/* .myView{
+  padding: 10px;
+  
+}
+.myCard{
+  font-size: 10px
+}
+.myPic{
+  padding: 1%
+}
+.myImg{
+  width: 100%;
+} */
+
+
+
+.myView{
+  padding: 10px 5vw 0 5vw;
+
+}
+.myCard{
+  font-size: 10px;
+
+}
+
+.myPic{
+  padding: 1vh
+}
+
+.myImg{
+  width: 85vw;
+  height: 35vh;
+
+}

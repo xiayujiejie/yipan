@@ -1,0 +1,113 @@
+<view wx:if="{{isHide}}">
+    <view wx:if="{{canIUse}}" >
+        <view class='header'>
+            <image src='/static/images/wx_login.png'></image>
+        </view>
+
+        <view class='content'>
+            <view class="text-center padding">申请获取以下权限</view>
+            <view class="text-center padding">获得你的公开信息(昵称，头像等)</view>
+        </view>
+
+        <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+            授权登录
+        </button>
+        
+    </view>
+    <view wx:else>请升级微信版本</view>
+</view>
+
+
+
+<view wx:else>
+
+  <view class="container">
+    <view class="profile-info">
+      <image bindtap="onWechatLogin" class="avatar" src="{{avatar}}"></image>
+      <view class="info">
+        <text class='name' bindtap='onWechatLogin'>{{nickname}}</text>
+      </view>
+      <!-- <view class="info">
+        <text class='item'>我的易豆：{{beans}}</text>
+      </view> -->
+      <!-- <image bindtap="onUserInfoClick" class='btn' src='/static/images/address_right.png'></image> -->
+    </view>
+    <!-- <view class="user-menu">
+        <view class="item">
+        <navigator url="/pages/index/index" bindtap="myHYClick" class="a">
+        <text class="widgets__info-name">我的会员卡</text>
+        </navigator>
+      </view>
+      <view class="item">
+        <navigator url="/pages/index/index" bindtap="myLogClick" class="a">
+        <text class="widgets__info-name">签到记录</text>
+        </navigator>
+      </view>
+      <view class="item">
+        <navigator url="/pages/index/index" bindtap="myScanCodeClick" class="a">
+        <text class="widgets__info-name">签到</text>
+        </navigator>
+      </view>
+      <view class="item">
+        <navigator url="/pages/index/index" bindtap="myScanCodeClick" class="a">
+        <text class="widgets__info-name">完善个人信息</text>
+        </navigator>
+      </view>
+    </view> -->
+  </view>
+
+
+
+<scroll-view scroll-y class="scrollPage">
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+  
+    <view class="cu-item arrow" bindtap="myHYClick">
+      <view class="content" >
+        <text class="cuIcon-card text-yellow"></text>
+        <text class="text-grey">我的会员卡</text>
+      </view>
+    </view>
+
+    <view class="cu-item arrow" bindtap="myScanCodeClick">
+      <view class="content"  >
+        <text class="cuIcon-time text-blue"></text>
+        <text class="text-grey">打卡签到</text>
+      </view>
+    </view>
+    <view class="cu-item arrow" bindtap="myLogClick">
+      <view class="content" >
+        <text class="cuIcon-formfill text-green"></text>
+        <text class="text-grey">签到记录</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <view class="content" bindtap="myOrderClick">
+        <text class="cuIcon-copy text-cyan"></text>
+        <text class="text-grey">我的订单</text>
+      </view>
+    </view>
+    <view class="cu-item arrow" bindtap="contactClick">
+      <view class="content" >
+        <text class="cuIcon-creativefill text-orange"></text>
+        <text class="text-grey">联系我们</text>
+      </view>
+    </view>
+
+       
+
+  </view>
+  <view class="cu-tabbar-height"></view>
+</scroll-view>
+
+  <view class='dialog-login' wx:if="{{showLoginDialog}}" bindtap='onCloseLoginDialog'>
+    <view class='dialog-body' catchtap='onDialogBody'>
+      <view class='title'>获取手机号权限</view>
+      <view class='content'>
+        <!-- <button type="primary" open-type="getUserInfo" bindgetuserinfo="onWechatLogin">微信登录</button>
+        <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onWechatPhone">手机号登录</button> -->
+        <button class='bottom' type='primary' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号</button>
+        <view>不授权手机号，将影响小程序的使用</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+/* pages/TYCG/TYCG.wxss */
+
+
+.myView{
+
+  padding-top: 1%;
+}
+.myPic{
+
+  padding: 1%;
+}
+.myImg{
+  padding-left: 10%;
+  width: 80%;
+  height: 70px;
+
+  padding-top: 1%;
+}

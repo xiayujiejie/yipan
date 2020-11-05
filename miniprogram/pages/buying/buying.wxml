@@ -1,0 +1,29 @@
+<!--pages/buying/buying.wxml-->
+<view class="myView">
+  <view class="myCard">
+    <view wx:for="{{array}}" wx:key="key"  wx:for-item="item">
+      <view class="myPic">
+        <image class="myImg" bindtap="navigetTObuying" mode="{{item.mode}}" src="{{src}}"></image>
+      </view>
+      <view class="myType">{{times}}次卡:{{price}}元</view>
+      <view>通用场馆
+        <label class="myInfo" bindtap="tongyongchagnguanjieshao">点击查看</label>
+      </view>
+      <view class="myText">会员权益：{{item.info}}</view>
+      <view>消费规则：</view>
+      <view>有效期：{{limittime}}天</view>
+    </view>
+  </view>
+</view>
+<view class="add_btn">
+
+ <view class="agreement-box">
+      <checkbox-group  class="mycb" bindchange="checkboxChange">
+        <checkbox/>我已阅读并同意
+        <label class="add_label" bindtap="check">《用户服务协议》</label>
+        </checkbox-group>
+      
+    </view>
+<button class="myPay" type="defult" bindtap="wxPay">微信支付</button>
+
+</view>

@@ -1,0 +1,5 @@
+/* pages/web/web.wxss */
+.arcticle{
+  width: 100%;
+  height: 100%;
+}

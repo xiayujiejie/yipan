@@ -1,0 +1,30 @@
+
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于易攀</view>
+  <view class='text-content'>
+    <view>Hi！欢迎来到易攀！</view>
+    <view class='margin-top-sm'>易攀的团队都是攀岩爱好者，喜欢尝试不同风格的岩馆、线路，但苦于没有趁手的会员卡。
+    <view class='margin-top-sm'>“四处借卡？”麻烦！</view>
+    <view class='margin-top-sm'> “单买门票？”贵得肾疼！</view>
+    <view class='margin-top-sm'>“每家馆都办张卡？”土豪才干得出来！占用资金不说，那么多卡到期也用不完呀！</view>
+    <view class='margin-top-sm'>小D说，为什么不搞个一卡通呢?于是有了攀岩通用卡。</view>
+    <view class='margin-top-sm'>这是易攀做的第一件事，我们还能做的更多。</view>
+    <view class='margin-top-sm'>欢迎提出宝贵建议！</view>
+    <view class='margin-top-sm'>欢迎合作！</view>
+    <view class='margin-top-sm'>欢迎加入易攀团队！</view>
+    </view>
+    <view class='margin-top-sm'>请微信联系：cdx2015201694</view>
+    <view class='margin-top-sm'>易攀，让攀岩更简单！</view>
+    <view class='margin-top-sm'>更多功能敬请期待！</view>
+    <!-- <image src="../../static/images/code.jpg" bindtap='imgYu'></image> -->
+
+<view class='imgList'>      
+  <view class='imgList-li' wx:for='{{imgArr}}'>
+    <image class='img' src='{{item}}' data-index='{{index}}' bindtap='previewImg'></image>
+  </view>
+</view>
+
+  </view>
+
+
+</view>

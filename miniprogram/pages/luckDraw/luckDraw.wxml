@@ -1,0 +1,37 @@
+<!--pages/luckDraw/luckDraw.wxml-->
+<view id="luckdraw_box">
+	<view class="container">
+		<image src="../../static/images/bg1.png" class="cont" mode=""></image>
+		<image src="../../static/images/caidai.png" class="caidai" mode=""></image>
+		<view class="header">
+			<view class="header-title">
+				<view class="left">
+					次数： <text style="color: #E4431A;">{{chishu}}</text>
+				</view>
+				<view class="right">
+					我的奖品 >
+				</view>
+			</view>
+		</view>
+		<view id="luckdraw_back">
+			<image style='transform:rotate({{ change_angle}}deg)' mode="scaleToFill" src="../../static/images/luckdraw_background.png"></image>
+		</view>
+		<view id="luckdraw_pointer" bindtap='luckDrawStart'>
+			<image mode="scaleToFill" src="../../static/images/luckdraw_pointer.png"></image>
+		</view>
+		<view class="guize">
+			<view class="title">
+				规则说明
+			</view>
+			<view class="g_item">
+				1.用户每天登录即送1次抽奖机会，分享好友则多赠1次机会
+			</view>
+			<view class="g_item">
+				2.用户点击大转盘抽奖按钮，有积分和现金两种方式可参与抽奖，没抽一次消耗1次抽奖机会
+			</view>
+			<view class="g_item">
+				3.用户获得的奖品，可在我的道具里查看
+			</view>
+		</view>
+	</view>
+</view>

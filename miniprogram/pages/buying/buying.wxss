@@ -1,0 +1,39 @@
+/* pages/buying/buying.wxss */
+
+
+.myView{
+  padding: 10px
+}
+.myCard{
+  font-size: 16px;
+  font-family:Microsoft YaHei;
+  
+}
+.myPic{
+  padding: 1%
+}
+.myImg{
+  width: 100%
+}
+.myType{
+ color: rgba(0, 0, 0, 0.904)
+}
+.add_btn{
+  font-size: 12px;
+
+}
+.myPay{
+  width: 80%;
+  margin: 30rpx;
+  border-radius: 70rpx;
+  background-color: rgb(56, 240, 32);
+}
+.myInfo{
+  color: blue;
+}
+.mycb{
+  padding: 5%;
+}
+.add_label{
+  color: blue;
+}

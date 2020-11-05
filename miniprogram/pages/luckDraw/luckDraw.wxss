@@ -1,0 +1,110 @@
+/* pages/luckDraw/luckDraw.wxss */
+.conbox {
+  width: 750upx;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+image.cont {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+image.caidai {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  z-index: 3;
+  width: 80%;
+  margin: 3vw 0;
+}
+
+.header-title {
+  width: 100%;
+  height: 60upx;
+  display: flex;
+  align-items: center;
+  padding: 0 48upx;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.header-title>view {
+  padding: 5px 10px;
+  border: 1px solid #d89720;
+  color: #d89720;
+  font-size: 28upx;
+  border-radius: 10px;
+}
+#luckdraw_box{ 
+   position:relative; 
+   width: 750upx;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+#luckdraw_back{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80vw;
+  height: 80vw;
+  margin: 10vh 10vw;
+  z-index: 99;
+}
+#luckdraw_back image{
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-origin:center center;
+}
+
+#luckdraw_pointer{ 
+    width:20vw;
+    height:25vw;
+    position:absolute;
+    left:39.5vw;
+    z-index:999; 
+    top:45vw;
+}
+
+#luckdraw_pointer image{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.guize {
+  width: 90vw;
+  min-height: 300upx;
+  z-index: 3;
+  background-image: linear-gradient(-180deg, #F48549 0%, #F2642E 100%);
+  border: 18upx solid #E4431A;
+  border: 18upx solid #E4431A;
+  border-radius: 16px;
+  padding: 2vw;
+  color: #fff;
+  position: absolute;
+  bottom: 10vh;
+  left: 5vw;
+}
+
+.guize .title {
+  text-align: center;
+  margin-bottom: 28upx;
+}
+
+.guize .g_item {
+  font-family: PingFang-SC-Medium;
+  font-size: 24upx;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  line-height: 20px;
+}

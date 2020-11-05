@@ -1,0 +1,12 @@
+.mySelect{
+  padding: 10%;
+  padding-top: 10%;
+  padding-left: 20%;
+}
+
+.mySign{
+  width: 60%;
+  margin: 30rpx;
+  border-radius: 70rpx;
+  background-color: rgb(56, 240, 32);
+}

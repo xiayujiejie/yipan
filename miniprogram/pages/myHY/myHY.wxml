@@ -1,0 +1,65 @@
+<!--pages/myHY/myHY.wxml-->
+<!--pages/myCenter/myCenter.wxml  个人中心-->
+<!-- <view class="solids-bottom padding-xs flex align-center">
+  <view class="flex-sub text-center">
+    <text class="padding">易豆:</text>
+    <text class="solid-bottom text-xxl padding text-red">80.00</text>
+  </view>
+</view> -->
+<view class="solids-bottom padding-xs flex align-center">
+  <view class="flex-sub text-cente">
+    <text class="padding">易豆：</text>
+    <text class="solid-bottom text-xxl padding text-red">{{beans}}</text>
+  </view>
+</view>
+
+
+
+<view wx:if="{{ishide}}">
+  <view class="padding-sm">
+  <view wx:for="{{array}}" class="card-item" wx:for-item="item">
+    <view class="bg-gradual-blue padding radius shadow-blur">
+      <!-- <view class="margin-top-sm text-Abc">持卡人 ：{{item.carduser}}</view> -->
+      <view class="margin-top-sm text-Abc">卡号 ：{{item.cardNo}}</view>
+      <view class="margin-top-sm text-Abc">卡种 ：{{item.cardType}}</view>
+      <view class="margin-top-sm text-Abc">有效时间 ：{{item.buyDate}}-{{item.expirationDate}}</view>
+      <view class="margin-top-sm text-Abc">剩余次数 ：{{item.remainingTimes}}次</view>
+    </view>
+  </view>
+<!-- <view class="mycardtext">{{myCenter}}</view>
+   <view wx:for="{{array}}"  wx:for-item="item"> -->
+     <!-- <view class="myCardStyle">
+     <view class="t1">持卡人 ：{{item.carduser}}</view>
+      <view class="t1">卡种 ：{{item.cardType}}</view>
+      <view class="t2">有效时间 ：{{item.buyDate}}-{{item.expirationDate}}</view>
+      <view class="t3">剩余次数 ：{{item.remainingTimes}}次</view> -->
+      <!-- <view class="t4">获得易豆 ：{{item.beans}}个</view>
+    </view>-->
+  </view> 
+</view>
+<view wx:else>
+ <view class="mycardtext">{{myCenter}}</view>
+</view>
+
+
+
+<!--pages/myCenter/myCenter.wxml  个人中心-->
+<!-- <view class="myView">
+  <view class="myCard">
+    <view wx:for="{{array}}" wx:for-item="item">
+      <view class="myPic">
+        <image class="myImg" bindtap="navigetTObuying" mode="{{item.mode}}" src="{{src}}"></image>
+      </view>
+       <view class="myType">{{item.text}}:￥{{item.price}}</view>
+       <view>有效期:{{item.limit}}</view>
+    </view>
+    
+  </view>
+</view>
+<view class="add_btn">
+
+  <button class="myPay" type="defult" bindtap="wxPay">退款</button>
+
+</view>
+
+ -->

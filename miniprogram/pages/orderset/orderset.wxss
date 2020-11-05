@@ -1,0 +1,14 @@
+/* pages/orderset/orderset.wxss */
+.all{
+  width: 100%;
+  height: 100%;
+}
+
+.fixe{
+  position:fixed; 
+  bottom:0;
+}
+
+.butt{
+  width: 30px;
+}

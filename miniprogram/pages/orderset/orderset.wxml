@@ -1,0 +1,67 @@
+
+
+
+<view class="cu-card dynamic {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+  <!--订单编号-->
+   <view style="display:none">订单编号</view>
+   <text style="display:none" class="text-grey"></text>
+   
+   <view class="cu-list menu">
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-grey">商品名称</text>
+      </view>
+      <view class="action">
+        <text class="text-grey text-sm">{{order.cardname}}</text>
+      </view>
+    </view>
+
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-grey">原价</text>
+      </view>
+      <view class="action">
+        <text class="text-grey text-sm">{{order.due}}</text>
+      </view>
+    </view>
+
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-grey">易豆抵扣</text>
+      </view>
+      <view class="action">
+        <text class="text-grey text-sm">{{order.beans}}</text>
+      </view>
+    </view>
+   </view>
+  </view>
+</view>
+
+
+<!--底部-->
+   <view class="padding bg-white" style="position:fixed; bottom:0;width: 750rpx;">
+    
+<view class="flex  p-xs margin-bottom-sm mb-sm">
+      <view class="flex-sub  padding-sm radius">
+        <text class="text-price text-xxl text-red">{{order.due-order.beans}}</text>
+      </view>
+      <view class="flex-sub  padding-sm radius">
+       <view wx:if="{{isOrder==1}}" >
+         <button style="width: 90%;" class="cu-btn round line-gray"  bindtap="goBackUrl">返回</button>
+       </view>
+       <view wx:else>
+        <button style="width: 90%;" class="cu-btn round line-gray"  bindtap="cancelOrder">取消订单</button>
+       </view>
+       
+      </view>
+      <view class="flex-sub  padding-sm radius">
+         <button style="width: 100%;" class="cu-btn round bg-red"  bindtap="trigger">立即付款</button>
+      </view>
+    </view>
+
+    </view>
+
+
+
+

@@ -1,0 +1,77 @@
+/* pages/myHY/myHY.wxss */
+.mycardtext{
+  padding-left: 3%;
+  padding-top: 3%;
+}
+.myCardStyle{
+  align-items: center;
+  display: flexbox;
+  padding-top: 3%;
+  text-align: center;
+  font-size: 15px;
+  width: 90%;
+  height:40%;
+  background-color: rgb(35, 107, 107);
+
+  margin-top: 20px;
+  margin-left: 5%;
+  
+}
+.myCardStyle .t1{
+ padding-left: 6%;
+  padding-top: 3%;
+  text-align: left;
+}
+.myCardStyle .t2{
+  padding-left: 6%;
+  padding-top: 3%;
+  text-align: left;
+}
+.myCardStyle .t3{
+  padding-left: 6%;
+  padding-top: 3%;
+  text-align: left;
+}
+.myCardStyle .t4{
+  padding-left: 6%;
+  padding-top: 3%;
+  text-align: left;
+}
+
+/* pages/myCenter/myCenter.wxss */
+
+.myView{
+  padding: 10px
+}
+.myCard{
+  font-size: 20px
+}
+.myPic{
+  padding: 5%
+}
+.myImg{
+  width: 100%
+}
+.myType{
+ color: red
+}
+.myText{
+ 
+  font-size: 12px
+  
+}
+.add_btn{
+  width: 100%;
+  position: fixed;
+  bottom: 30rpx;
+}
+.myPay{
+  width: 80%;
+  margin: 30rpx;
+  border-radius: 70rpx;
+  background-color: rgba(90, 94, 90, 0.842);
+}
+
+.card-item {
+  margin-bottom: 20rpx;
+}

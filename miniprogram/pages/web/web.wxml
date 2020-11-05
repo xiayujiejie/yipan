@@ -1,0 +1,35 @@
+<!--pages/web/web.wxml-->
+<view class="article">
+<view wx:if="{{linkWeb==1}}">
+  <web-view src='https://mp.weixin.qq.com/s/YffScfPJahJIEPvi6VuouQ'></web-view>
+</view>
+
+<view wx:elif="{{linkWeb==2}}">
+  <web-view src='https://mp.weixin.qq.com/s/BJsFsAF0qdFScQAcc9uHIA'></web-view>
+</view>
+
+<view wx:elif="{{linkWeb==3}}">
+  <web-view src='https://mp.weixin.qq.com/s/5_glt8u7fZhJ3ATPWBYYCQ'></web-view>
+</view>
+
+<view wx:elif="{{linkWeb==4}}">
+  <web-view src='https://mp.weixin.qq.com/s/_dC8Hudtq-3JxloSh0SyYA'></web-view>
+</view>
+
+<view wx:elif="{{linkWeb==5}}">
+  <web-view src='https://mp.weixin.qq.com/s/Bn3m41YNDu8tiDHfhzzm-A'></web-view>
+</view>
+
+<view wx:elif="{{linkWeb==6}}">
+  <web-view src='https://mp.weixin.qq.com/s/L0fO7-wMI0glM__I5jO5iA'></web-view>
+</view>
+
+<view wx:elif="{{linkWeb==7}}">
+  <web-view src='https://mp.weixin.qq.com/s/iKr4XBvjyV99gmhDwW8dCw'></web-view>
+</view>
+
+<view wx:elif="{{linkWeb==8}}">
+  <web-view src='https://mp.weixin.qq.com/s/wNVJ-uceN8x0wMK7goUk_Q'></web-view>
+</view>
+
+</view>
