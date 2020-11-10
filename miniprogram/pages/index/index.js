@@ -250,10 +250,21 @@ Page({
   contactClick:function(){
    // console.log("点击了联系我们的按钮")
       wx.navigateTo({
-        // url: '/pages/contact/contact',
-        url:'/pages/luckDraw/luckDraw'
+        url: '/pages/contact/contact',
       })
   },
+  luckyClick:function(){
+    if(app.globalData.openid){
+      wx.navigateTo({
+        url:'/pages/luckDraw/luckDraw'
+      })
+    }else{
+      wx.showModal({
+        title: '提示',
+        content:'请稍等，登录后再抽奖',
+      })
+    }
+   },
  
 
 
@@ -290,10 +301,6 @@ Page({
               gender = res.userInfo.gende;
               nickname = res.userInfo.nickName;
 
-              
-              // that.data.ypMember.wxid = app.globalData.openid;
-              // that.data.ypMember.sex = gender;
-              // console.log('login',that.data.login)
             //获取用户openid和易豆
               if(that.data.login){
                 wx.request({
@@ -369,26 +376,7 @@ Page({
       that.data.ypMember.iv = e.detail.iv;
       that.data.login=true
       console.log(app.globalData.hasLogin)
-      // wx.request({
-      //   url: 'https://www.yipan.club/a/yipan/ypMember/login', 
-      //   method:'POST',
-      //   data:JSON.stringify(that.data.ypMember),
-      //   header: {
-      //     'content-type': 'application/json'
-      //   },
-      //   success:function(res){
-      //     if(res.data.code === 'success'){
-      //       let code = res.data.code;
-      //       let message = res.data.message;
-      //       app.globalData.code = code;
-      //       app.globalData.openid = message;
-      //       that.setData({
-      //         // beans : res.data.beans,
-      //         isHide:false
-      //         })
-      //     }
-      //   },
-      // })
+     
       that.onWechatLogin();
     }
   this.setData({

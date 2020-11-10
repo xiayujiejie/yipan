@@ -14,5 +14,6 @@ App({
     code:'error',//??
     isPay:false,
     ypMember:null,
+    baseUrl :'https://www.yipan.club/a/yipan/'
   }
 })

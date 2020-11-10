@@ -27,33 +27,7 @@
       <view class="info">
         <text class='name' bindtap='onWechatLogin'>{{nickname}}</text>
       </view>
-      <!-- <view class="info">
-        <text class='item'>我的易豆：{{beans}}</text>
-      </view> -->
-      <!-- <image bindtap="onUserInfoClick" class='btn' src='/static/images/address_right.png'></image> -->
     </view>
-    <!-- <view class="user-menu">
-        <view class="item">
-        <navigator url="/pages/index/index" bindtap="myHYClick" class="a">
-        <text class="widgets__info-name">我的会员卡</text>
-        </navigator>
-      </view>
-      <view class="item">
-        <navigator url="/pages/index/index" bindtap="myLogClick" class="a">
-        <text class="widgets__info-name">签到记录</text>
-        </navigator>
-      </view>
-      <view class="item">
-        <navigator url="/pages/index/index" bindtap="myScanCodeClick" class="a">
-        <text class="widgets__info-name">签到</text>
-        </navigator>
-      </view>
-      <view class="item">
-        <navigator url="/pages/index/index" bindtap="myScanCodeClick" class="a">
-        <text class="widgets__info-name">完善个人信息</text>
-        </navigator>
-      </view>
-    </view> -->
   </view>
 
 
@@ -109,5 +83,8 @@
         <view>不授权手机号，将影响小程序的使用</view>
       </view>
     </view>
+  </view>
+  <view class="luckEntry"  bindtap="luckyClick">
+    <image src='../../static/images/lucky.png'></image>
   </view>
 </view>

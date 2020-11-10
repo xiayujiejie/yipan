@@ -91,7 +91,7 @@ image.caidai {
   padding: 2vw;
   color: #fff;
   position: absolute;
-  bottom: 10vh;
+  bottom: 8vh;
   left: 5vw;
 }
 
@@ -107,4 +107,56 @@ image.caidai {
   letter-spacing: 0.5px;
   text-align: justify;
   line-height: 20px;
+}
+.shadowbox {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, .6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myrewards {
+  width: 80vw;
+  min-height: 10vh;
+  background: #FFEEDF;
+  border: 5px solid #F2692F;
+  color: #333;
+  font-size: 24upx;
+  font-family: PingFang-SC-Medium;
+  border-radius: 10px;
+  padding: 20px 0;
+}
+
+.myrewards .title {
+  font-family: PingFang-SC-Bold;
+  font-size: 16px;
+  color: #E4431A;
+  letter-spacing: 0.57px;
+  display: flex;
+  padding-top: 36upx;
+  justify-content: center;
+}
+
+.myrewards .itembox {
+
+  max-height:30vh;
+  overflow-y: auto;
+  padding: 10px 0;
+}
+
+.myrewards .item {
+  width: 80%;
+  height: 16px;
+  margin: 10px 10%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #e1e1e1;
 }

@@ -227,3 +227,16 @@ page{
 .dialog-login .dialog-body button{
   margin-top: 30rpx;
 }
+
+.luckEntry{
+  width: 50px;
+  height: 65px;
+  position: absolute;
+  z-index: 100;
+  right: 5vw;
+  bottom: 5vh;
+}
+.luckEntry image{
+  width: 100%;
+  height: 100%;
+}
